@@ -18,11 +18,10 @@ LoadSafe is a platform that performs rigorous load testing to ensure your websit
 **Run the following command to start the load testing :** 
 
 K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true \
-  k6 run -o experimental-prometheus-rw --tag testid=<SET-HERE-A-UNIQUE-ID> ./samples/test.js
-
+  k6 run -o experimental-prometheus-rw --tag testid= ./samples/test.js
 
 - This command will run the load testing script using K6, and will output the results in Prometheus format.
-- The testid tag is optional but recommended, as it will allow you to identify the specific test run in the Grafana dashboard.
+- The testid --tag is optional but recommended, as it will allow you to identify the specific test run in the Grafana dashboard, for     (e.g in above command **--tag testid=first_load**)
 
 *After the load testing is complete, you can view the results in the Grafana dashboard by visiting http://localhost:3000.*
 *Log in to Grafana using the default credentials (username admin, password admin).*
