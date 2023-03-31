@@ -15,7 +15,7 @@ LoadSafe is a platform that performs rigorous load testing to ensure your websit
 
 - Grafana will be available at http://localhost:3000.
 
-**Run the following command to start the load testing:** 
+**Run the following command to start the load testing :** 
 
 K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true \
   k6 run -o experimental-prometheus-rw --tag testid=<SET-HERE-A-UNIQUE-ID> ./samples/test.js
